@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* {
+    font-family: 'Poppins', sans-serif;
+}
+body {
+    margin: 0;
+    padding: o;
+    box-sizing: border-box;
+    background-image: url(media/imagens/28305.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+header {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgba(0, 0, 0, 0.281); 
+}
+.logo {
+    padding: 20px;
+}
+.menu {
+    padding: 0 100px;
+}
+.menu nav {
+    display: flex;
+    width: 35vw;
+    justify-content: space-between;
+}
+.menu nav .menu1:hover .sub {
+    display: block;
+}
+.menu nav .menu2:hover .sub1 {
+    display: block;
+}
+.menu nav .menu3:hover .sub2 {
+    display: block;
+}
+.menu nav div p {
+    padding: 10px;
+    text-decoration: none;
+    color: #000000;
+    transition: .5s;
+}
+.menu nav div p:hover {
+    color: orange;
+    cursor: pointer;
+}
+.menu nav div .sub , .sub1 , .sub2 {
+    display: none;
+    position: absolute;
+    background-color: white; 
+    padding: 30px;
+}
+.sub div , .sub1 div , .sub2 div {
+    margin-top: 20px;
+}
+.menu nav .sub div a , .menu nav .sub1 div a , .menu nav .sub2 div a {
+    text-decoration: none;
+    color: black;
+    transition: .5s;
+}
+.menu nav .sub div a:hover , .menu nav .sub1 div a:hover , .menu nav .sub2 div a:hover {
+    color: orange;
+}
+
+/* Main */
+
+main {
+    width: 100%;
+}
+main .container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: rgb(124, 106, 0);
+}
+main .container nav {
+    display: flex;
+    padding: 30px;
+    width: 600px;
+    justify-content: space-between;
+}
+main .container nav a {
+    text-decoration: none;
+    color: gold;
+}
